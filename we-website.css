@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+
+.backroundImage {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url("./Assets/backround-dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+    filter: brightness(40%)
+}
+
+#logo {
+    width: 3vw; 
+}
+
+#icon1 {
+    width: 6vw;
+}
