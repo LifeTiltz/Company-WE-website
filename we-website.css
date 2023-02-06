@@ -1,24 +1,106 @@
 * {
     margin: 0;
+    font-family: 'Figtree', sans-serif;
 }
 
+/* These are the sizes and 
+colors of the text */
+h1, h3, h4 {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5{
+    font-size: 1rem;
+    text-align: center;
+    color: #B0B0B0;
+}
+
+.card p {
+    color: #B0B0B0;
+    font-size: 1rem;
+}
+
+/* this is a suboptimal solution. 
+I just am looking for a MWP. 
+This just adds a gradient at the bottom of the page  */
+.jank {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+}
 
 .backroundImage {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    filter: brightness(40%);
+    
     background-image: url("./Assets/backround-dark.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     z-index: -1;
-    filter: brightness(40%)
+
 }
 
 #logo {
-    width: 3vw; 
+    /* width: 3vw;  */
+    width: 3rem;
 }
 
-#icon1 {
-    width: 6vw;
+#icon1, #icon2, #icon3 {
+    width: 6rem;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 40px;
+    gap: 80px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    width: 19rem;
+    height: 25rem;
+    background-color: rgba(0, 0, 0, 0.48);
+    border-radius: 24px;
+    padding: 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    height: 2.25rem;
+    width: 8.625rem;
+    
+}
+
+
+
+
