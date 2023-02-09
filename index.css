@@ -58,15 +58,13 @@ This just adds a gradient at the bottom of the page  */
 .backroundImage {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+
     filter: brightness(40%);
-    
     background-image: url("./Assets/backround-dark.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     z-index: -2;
-
 }
 
 #logo {
@@ -108,10 +106,23 @@ This just adds a gradient at the bottom of the page  */
     padding: 16px 0px;
 }
 
+/* Instead of plaiyng with the image here
+    I will add the pic to the div as a background */
+#photo {
+    visibility: hidden;
+    position: absolute;
+   
+    background-size:100%;
+    background-position:top;
+    
+    z-index: -1;
+}
+
 .card button {
     margin: 40px 0 16px;
     border-radius: 100px;
     color: #033239;
+    border: none;
 }
 
 button {
@@ -178,3 +189,32 @@ footer {
     }
 }
 
+
+
+/* This is to get lightmode  */
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    .jank {
+        background: none;
+    }
+
+    .backroundImage {
+        background-image: none;
+    }
+
+    h1, h3 {
+        color: #1D1D1D;
+    }
+
+    .photo {
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+        
+        background-color: black;
+        background-image: linear-gradient(180deg, rgba(22, 22, 22, 0.2) 0%, #161616 100%),url("./Assets/video-light.png");
+
+    }
+}
