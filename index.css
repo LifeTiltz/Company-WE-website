@@ -47,7 +47,7 @@ h5{
 /* this is a suboptimal solution. 
 I just am looking for a MWP. 
 This just adds a gradient at the bottom of the page  */
-.jank {
+/* .jank {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -65,6 +65,17 @@ This just adds a gradient at the bottom of the page  */
     background-repeat: no-repeat;
     position: fixed;
     z-index: -2;
+} */
+
+body {
+    background-color: black;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6) 50%, 
+        rgb(0, 0, 0) 100%), 
+        url("./Assets/backround-dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 }
 
 #logo {
@@ -90,7 +101,7 @@ This just adds a gradient at the bottom of the page  */
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.48);
+    background-color: rgba(47, 47, 47, 0.48);
     border-radius: 24px;
     padding: 48px;
 
@@ -149,8 +160,9 @@ footer {
     margin: 0 16px;
 }
 
-
-@media (max-width: 914px) or (max-height: 975px) {
+/* or (max-height: 975px)
+    i am not sure i want this. maybe smaller */
+@media (max-width: 914px)  {
     h1 {
         font-size: 32px;
     }
@@ -169,6 +181,11 @@ footer {
 
     #logo {
         width: 48px;
+    }
+
+    body {
+        background-size: cover;
+        background-position: top;
     }
 
     .header {
@@ -195,12 +212,9 @@ footer {
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    .jank {
-        background: none;
-    }
-
-    .backroundImage {
+    body {
         background-image: none;
+        background-color: white;
     }
 
     h1, h3 {
@@ -209,23 +223,24 @@ footer {
 
     .card {
         padding-top: 160px;
-    border-radius: 0px;
+        border-radius: 0px;
+        background-color: black;
 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:  bottom;
     }
 
     .photo {
-        background-image: linear-gradient(180deg, rgba(22, 22, 22, 0.2) 0%, #161616 100%),url("./Assets/video-light.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:  bottom; 
-        background-color: black;
+        background-image: linear-gradient( rgb(22, 22, 22, 0.2) 50%, #161616 100%),url("./Assets/video-light.png");
     }
 
     .drone {
-        background-image: linear-gradient(180deg, rgba(22, 22, 22, 0.2) 0%, #841a1a 100%),url("./Assets/drone-light.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        /* background-position:  center;  */
-        background-color: black;
+        background-image: linear-gradient( rgba(22, 22, 22, 0.2) 50%, #161616 100%),url("./Assets/drone-light.png"); 
     }
+
+    .production {
+        background-image: linear-gradient( rgba(22, 22, 22, 0.2) 50%, #161616 100%),url("./Assets/video-edit-light.png"); 
+    }
+
 }
