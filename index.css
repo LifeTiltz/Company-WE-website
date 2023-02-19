@@ -184,8 +184,8 @@ footer {
     }
 
     body {
-        background-size: cover;
-        background-position: top;
+        background-size: 100% auto;
+        /* background-position: top; */
     }
 
     .header {
@@ -206,6 +206,9 @@ footer {
     }
 }
 
+@media (min-width: 1600px) {
+    
+}
 
 
 /* This is to get lightmode  */
