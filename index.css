@@ -193,7 +193,11 @@ footer a {
         background-color: white;
     }
 
-    h1, h3 {
+    h1 {
+        color: #1D1D1D;
+    }
+
+    footer a {
         color: #1D1D1D;
     }
 
