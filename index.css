@@ -26,8 +26,6 @@ h3 {
 }
 
 h4 {
-    /* Couldnt use same font and this one 
-    is a bit bigger and doesnt fit the spec */
     font-size: 25px;
     font-weight: 700;
 }
@@ -43,29 +41,6 @@ h5{
     font-size: 1rem;
     font-weight: 700;
 }
-
-/* this is a suboptimal solution. 
-I just am looking for a MWP. 
-This just adds a gradient at the bottom of the page  */
-/* .jank {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
-}
-
-.backroundImage {
-    width: 100vw;
-    height: 100vh;
-
-    filter: brightness(40%);
-    background-image: url("./Assets/backround-dark.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: fixed;
-    z-index: -2;
-} */
 
 body {
     background-color: black;
@@ -114,18 +89,6 @@ body {
     padding: 16px 0px;
 }
 
-/* Instead of plaiyng with the image here
-    I will add the pic to the div as a background */
-/* #photo {
-    visibility: hidden;
-    position: absolute;
-   
-    background-size:100%;
-    background-position:top;
-    
-    z-index: -1;
-} */
-
 .card button {
     margin: 40px 0 16px;
     border-radius: 100px;
@@ -142,6 +105,13 @@ button {
 
 footer {
     margin: 80px 0 64px;
+}
+
+footer a {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .firstRow {
