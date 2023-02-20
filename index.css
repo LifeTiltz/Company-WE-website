@@ -69,13 +69,10 @@ This just adds a gradient at the bottom of the page  */
 
 body {
     background-color: black;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.6) 50%, 
-        rgb(0, 0, 0) 100%), 
-        url("./Assets/backround-dark.png");
+    background-image: url("./Assets/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-   
+    background-position: top center;
 }
 
 #logo {
@@ -101,7 +98,7 @@ body {
 }
 
 .card {
-    background-color: rgba(47, 47, 47, 0.48);
+    background: rgba(0, 0, 0, 0.48);
     border-radius: 24px;
     padding: 48px;
 
@@ -119,7 +116,7 @@ body {
 
 /* Instead of plaiyng with the image here
     I will add the pic to the div as a background */
-#photo {
+/* #photo {
     visibility: hidden;
     position: absolute;
    
@@ -127,7 +124,7 @@ body {
     background-position:top;
     
     z-index: -1;
-}
+} */
 
 .card button {
     margin: 40px 0 16px;
@@ -139,6 +136,8 @@ body {
 button {
     height: 36px;
     width: 138px;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 footer {
@@ -195,6 +194,10 @@ footer {
    
     #icon1, #icon2, #icon3 {
         width: 64px;
+    }
+
+    .card {
+        background: rgba(47, 47, 47, 0.48);;
     }
 
     .cards {
