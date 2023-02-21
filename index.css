@@ -101,6 +101,13 @@ button {
     width: 138px;
     font-size: 13px;
     font-weight: 700;
+    transition-duration: 0.1s; 
+}
+
+button:hover {
+    background-color: white;
+    font-size: 14px;
+    /* width: 140px; */
 }
 
 footer {
@@ -161,32 +168,38 @@ footer a {
         padding: 48px 25px;
         gap: 32px
     }
+
+    .container {
+        width: 93%;
+    }
    
     #icon1, #icon2, #icon3 {
         width: 64px;
     }
 
     .card {
-        background: rgba(47, 47, 47, 0.48);;
+        background: rgba(47, 47, 47, 0.48);
+        flex-basis: auto;
     }
 
     .cards {
         flex-direction: column;
     }
 
-    .container {
-        width: 93%;
+    .firstRow {
+        flex-direction: column;
+        gap: 16px;
     }
-}
 
-@media (min-width: 1600px) {
+    .redDot {
+        display: none;
+    }
     
 }
 
 
 /* This is to get lightmode  */
 
-/* Light mode */
 @media (prefers-color-scheme: light) {
     body {
         background-image: none;
