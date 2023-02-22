@@ -63,7 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0 40px;
+    padding: 120px 0 80px;
     gap: 80px;
 }
 
@@ -76,7 +76,7 @@ body {
 .card {
     background: rgba(0, 0, 0, 0.48);
     border-radius: 24px;
-    padding: 48px;
+    padding: 48px 48px 64px;
 
     display: flex;
     flex-direction: column;
@@ -89,15 +89,13 @@ body {
     padding: 16px 0px;
 }
 
-.card button {
-    margin: 40px 0 16px;
+button {
+    margin-top: 40px;
     border-radius: 100px;
     color: #033239;
     border: none;
     cursor: pointer;
-}
 
-button {
     height: 36px;
     width: 138px;
     font-size: 13px;
@@ -111,12 +109,12 @@ button:hover {
 
     /* 👇 Having some giggles 👇 */
 
-    width: 500px;
+    /* width: 500px;
     height: 350px;
     color: blue;
     background-color: rgb(217, 22, 54);
     border: #f6336d solid 10px;
-    font-size: 55px;
+    font-size: 55px; */
 }
 
 footer {
@@ -134,7 +132,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 24px;
+    margin-bottom: 24px;
 }
 
 .redDot {
@@ -156,16 +154,8 @@ footer a {
         font-size: 22px;
     }
 
-    h5 {
-        font-size: 14
-        ;
-    }
     .card p {
         font-size: 14px;
-    }
-
-    #logo {
-        width: 48px;
     }
 
     body {
@@ -188,10 +178,21 @@ footer a {
     .card {
         background: rgba(47, 47, 47, 0.48);
         flex-basis: auto;
+        padding: 32px 24px;
+        
     }
 
     .cards {
         flex-direction: column;
+    }
+
+    .card h4 {
+        padding: 8px 0px 16px;
+    }
+    
+
+    button {
+        margin-top: 32px;
     }
 
     .firstRow {
